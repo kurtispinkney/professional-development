@@ -12,6 +12,7 @@ import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
 import ArticlesListPage from "./Pages/ArticlesListPage";
+import ArticlePage from "./Pages/ArticlePage";
 
 class App extends Component {
 
@@ -62,6 +63,9 @@ class App extends Component {
           </Route>
           <Route path="/articles">
             <ArticlesListPage />
+          </Route>
+          <Route path="/article/:name">
+            <ArticlePage />
           </Route>
           </Switch>
         </div>
