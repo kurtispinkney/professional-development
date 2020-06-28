@@ -11,6 +11,8 @@ import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
+import ArticlesListPage from "./Pages/ArticlesListPage";
+
 class App extends Component {
 
   constructor(props){
@@ -57,6 +59,9 @@ class App extends Component {
           {/* <Testimonials data={this.state.resumeData.testimonials}/> */}
           <Contact data={this.state.resumeData.main}/>
           <Footer data={this.state.resumeData.main}/>
+          </Route>
+          <Route path="/articles">
+            <ArticlesListPage />
           </Route>
           </Switch>
         </div>
