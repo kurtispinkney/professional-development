@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';
@@ -48,6 +48,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
+          <Switch>
+          <Route path="/" exact>
           <Header data={this.state.resumeData.main}/>
           <About data={this.state.resumeData.main}/>
           <Resume data={this.state.resumeData.resume}/>
@@ -55,6 +57,8 @@ class App extends Component {
           {/* <Testimonials data={this.state.resumeData.testimonials}/> */}
           <Contact data={this.state.resumeData.main}/>
           <Footer data={this.state.resumeData.main}/>
+          </Route>
+          </Switch>
         </div>
     </BrowserRouter>
     );
