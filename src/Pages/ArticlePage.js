@@ -25,13 +25,17 @@ const ArticlePage = () => {
     return matchingArticle
         ? (
             <Fragment>
-                <h1>{matchingArticle.title}</h1>
-                {matchingArticle.content.map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
-                ))}
-            {/* <UpvotesSection upvotes={articleInfo.upvotes} articleName={name} setArticleInfo={setArticleInfo} />
-            <AddCommentForm articleName={name} setArticleInfo={setArticleInfo} />
-            <CommentsList comments={articleInfo.comments} /> */}
+            <div id="articles">
+                <section>
+                    <h1>{matchingArticle.title}</h1>
+                    {matchingArticle.content.map((paragraph, i) => (
+                        <p className="container" key={i}>{paragraph}</p>
+                    ))}
+                {/* <UpvotesSection upvotes={articleInfo.upvotes} articleName={name} setArticleInfo={setArticleInfo} />
+                <AddCommentForm articleName={name} setArticleInfo={setArticleInfo} />
+                <CommentsList comments={articleInfo.comments} /> */}
+                </section>
+            </div>
             </Fragment>
         ) : (
             <NotFoundPage></NotFoundPage>

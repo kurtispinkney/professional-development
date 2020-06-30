@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const ArticlesList = ({ articles }) => (
     <Fragment>
+    <section id="article-list">
     {articles.map(article => (
         < Link 
             to={`/article/${article.name}`}
@@ -13,6 +14,7 @@ const ArticlesList = ({ articles }) => (
             <p>{article.content[0].substring(0, 150)} ...</p>
         </Link>
     ))}
+    </section>
     </Fragment>
 )
 
