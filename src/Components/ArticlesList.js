@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 
 
 const ArticlesList = ({ articles }) => (
-    <Fragment>
-    <section id="article-list">
-    {articles.map(article => (
-        < Link 
-            to={`/article/${article.name}`}
-            className="article-list-item" 
-            key={article.name}> 
-            <h3>{article.title}</h3>
-            <p>{article.content[0].substring(0, 150)} ...</p>
-        </Link>
-    ))}
-    </section>
-    </Fragment>
+    
+    articles.map(article =>
+            <a class="card" href={'article/' + article.name} >
+                <div>
+                    <h1>{article.title}</h1>
+                    <p>{article.summary}</p>
+                    <div class="date">{article.date}</div>
+                    <div class="tags">
+                        <div class="tag">S3, Lambda</div>
+                    </div>
+                </div>
+            </a>
+    )
 )
 
 export default ArticlesList
