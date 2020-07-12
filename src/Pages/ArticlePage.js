@@ -1,8 +1,8 @@
 import React, {useState, useEffect, Fragment} from "react";
 import { useParams } from "react-router-dom";
-// import AddCommentForm from "../components/AddCommentForm";
-// import CommentsList from "../components/CommentsList";
-// import UpvotesSection from "../components/UpvotesSection";
+import AddCommentForm from "../Components/AddCommentForm";
+import CommentsList from "../Components/CommentsList";
+import UpvotesSection from "../Components/UpvotesSection";
 import NotFoundPage from "./NotFoundPage";
 import articles from "./article-content";
 

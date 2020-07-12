@@ -3,35 +3,41 @@
 /* ------------------------------------------------------------------ */
 
 #article-list {
-   background: #ffffff;
-    padding-bottom: 72px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #ffffff url(../images/articlelist-background.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
  }
- 
- #article-list a, #article-list a:visited  { color: #11ABB0; }
- /* #article-list a:hover, #article-list a:focus { color: #313131; } */
  
  #article-list h1 {
    font: 40px/40px 'opensans-bold', sans-serif;
-   background-color: rebeccapurple;
-   color: #fff;
+   background-color: #000000;
+   color: #F0CF65;;
    text-transform: uppercase;
    letter-spacing: 1px;
-   margin-bottom: 1.5em;
+   margin-bottom: 0em;
    text-align: center;
    padding: 24px;
  }
- #article-list h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
- }
+
+  /* Style buttons */
+  #article-list .btn {
+  float: left;
+}
+
+#article-list .btn :hover, :focus {
+  color: white;
+} 
+
  #article-list h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
    text-align: center;
    max-width: 800px;
    margin-left: auto;
    margin-right: auto;
-   color: #11ABB0;
+   color: #F0CF65;
+   padding-top: 15px;
  }
 
  #article-list h3:hover {
@@ -44,48 +50,217 @@
    text-transform: uppercase;
    letter-spacing: 1px;
  }
-
- #article-list ArticlesList {
-   font: 16px/16px 'opensans-bold', sans-serif;
-   margin: 0 0 1.15em;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 24px;
- }
  
- #article-list .container {
-   max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 24px;
- }
-
- #article-list .header-col { padding-top: 9px; }
- #article-list .main-col { padding-right: 10%; }
- 
- #article-list .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
-    margin-bottom: 18px;
-    margin-top: 9px;
- }
- #article-list .info span {
-    margin-right: 5px;
-    margin-left: 5px;
- }
  #article-list .date {
     font: 15px/24px 'opensans-regular', sans-serif;
     margin-top: 6px;
  }
 
  #article-list .article-list-item p {
-   padding-bottom: 32px;
-   border-bottom: 2px solid black;
-   max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
  }
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Open Sans';
+  background: #fafafa;
+}
+
+#article-list a {
+  color: inherit;
+}
+
+#article-list .cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0  auto;
+  width: max-content;
+  grid-area: header;
+}
+
+#article-list .card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: #F0CF65;
+  background-color: #000000;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 2em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#article-list .card:hover {
+  transform: rotate(0);
+}
+
+#article-list .card h1 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #fff
+}
+
+#article-list .card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+#article-list .card .tags {
+  display: flex;
+}
+
+#article-list .card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+#article-list .card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+#article-list .card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+#article-list .card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+#article-list .card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+#article-list .card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+#article-list .card:hover {
+  color: var(--color);
+}
+
+#article-list .card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+#article-list .card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 0rem;
+}
+
+#article-list .info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+#article-list .info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+#article-list .info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  #article-list .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #article-list .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  #article-list .info {
+    justify-content: center;
+  }
+  #article-list .card-grid-space .num {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #article-list .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  #article-list .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #article-list .info {
+    display: block;
+    text-align: center;
+  }
+  #article-list .info h1 {
+    margin: 0;
+  }
+}
+ 
