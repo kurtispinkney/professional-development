@@ -4,7 +4,7 @@ import ArticlesList from "../Components/ArticlesList";
 import articles from "./article-content";
 
 const ArticlesListPage = () => (
-    <Fragment>
+<Fragment>
     <div id="article-list">
         <h1>Articles
           <a class="btn" href="/">

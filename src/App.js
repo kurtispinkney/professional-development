@@ -13,6 +13,7 @@ import Portfolio from './Components/Portfolio';
 
 import ArticlesListPage from "./Pages/ArticlesListPage";
 import ArticlePage from "./Pages/ArticlePage";
+import WxProjectPage from "./Pages/WxProjectPage";
 
 class App extends Component {
 
@@ -50,7 +51,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
+        <div>
           <Switch>
           <Route path="/" exact>
           <Header data={this.state.resumeData.main}/>
@@ -66,6 +67,9 @@ class App extends Component {
           </Route>
           <Route path="/article/:name">
             <ArticlePage />
+          </Route>
+          <Route path="/wxproject">
+            <WxProjectPage />
           </Route>
           </Switch>
         </div>
