@@ -1,9 +1,9 @@
-# React JS Resume Web App Template      
+# Welcome to My Professional Development Site!     
 ![ReactJS Resume Website Template](resume-screenshot.jpg?raw=true "ReactJS Resume Website Template")
 ### <a href="https://react-resume-template.herokuapp.com/">LIVE DEMO</a> 
 
 ## Description
-This is a ReactJS based personal resume website template. I have built this by following a Udemy course (credits below) and by beginning with the Ceevee template by Styleshout (credits also below), and breaking up their template into isolated React components. Data is fed directly from a JSON File. This means that in its final form, it can be customized and used by anybody simply by filling in their own personal info into the JSON file and the changes will be dynamically fed into the site. If you would like to use this template for your own personal resume website, read on to learn how to build your own copy.
+Welcome to my professional development website's repository! I decided to start this project as a way to showcase the skills and technologies that I've learned while working at my current job, as well as to try out some new languages and tools outside of work. While the main page of the site will have some resume/about me information, there will also be links to a blog articles that I'll write throughout this journey and to a personal project that I work on outside of my 9-5. 
 
 ## Make it Your Own!
 ### 1. Make sure you have what you need
