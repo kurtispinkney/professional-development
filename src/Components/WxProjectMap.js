@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import mapboxgl from 'mapbox-gl';
 
 
-
-mapboxgl.accessToken = 'pk.eyJ1Ijoia3VydGlzcGlua25leSIsImEiOiJja2E2NzN4ZzEwNTNpMnRtamsyMmh0YjZxIn0.RjPMGT1svhp9t6FveQTV3g';
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
 class WxMap extends React.Component {
   constructor(props) {
