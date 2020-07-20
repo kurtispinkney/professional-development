@@ -28,9 +28,6 @@ class Header extends Component {
 	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
             <li><Link to="/articles">Blog</Link></li>
             <li><Link to="/wxproject">WxProject</Link></li>
-
-            {/* <li><a className="smoothscroll" href="#portfolio">WxProject</a></li> */}
-            {/* <li><a className="smoothscroll" href="#contact">Contact</a></li> */}
          </ul>
 
       </nav>
