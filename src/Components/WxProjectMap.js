@@ -47,4 +47,4 @@ class WxMap extends React.Component {
   }
    
 export default WxMap
-  ReactDOM.render(<WxMap />, document.getElementById('app'));
+  ReactDOM.render(<WxMap />, document.getElementById('root'));
