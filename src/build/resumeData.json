@@ -1,0 +1,146 @@
+{
+  "main": {
+    "name":"Kurtis Pinkney",
+    "occupation":"Scientific Software Engineer",
+    "description":"currently employed to develop operational workflows to process weather satellite data generating meteorological products in near-real time",
+    "image":"profilepic.jpg",
+    "bio":"I began my career as an atmospheric scientist and used Python to complete my course work and thesis research. Leveraging the programming skills I developed in college, I stumbled my way into a role as a scientific programmer where I've been exposed to a world of project requirements and processes running in production environments. As a result I've dedicated a lot of time, on and off the clock, learning about development best practices and incorporating those lessons learned into my work.",
+    "bio_personal": "In my free time, I've taken to working on a pet project to refine my programming skills and to play with new tools and technologies. Outside of programming, though, I enjoy playing flag football and backpacking with my fiancee and dog. My fiancee also loves plants and gardening, so I've also been recruited to build various plant shelves and boxes as needed to sustain her grow operation. If you're interested in learning more about me feel free to get in touch with me or download my resume for a deeper dive into my professional skills.",
+    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "kurtis.pinkney@gmail.com",
+    "phone": "808-202-3727",
+    "address":{
+      "street":"(Your Street)",
+      "city":"Washington D.C.",
+      "state":"(Your State)",
+      "zip": "(Your Zip/Postal Code)"
+    },
+    "website": "http://www.kurtispinkney.com",
+    "resumedownload":"https://drive.google.com/file/d/1Tf267pIiVVxiQpQ00Ghg7bQwv55AXEwo/view?usp=sharing",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/kurtis-pinkney/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/kurtispinkney",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "education":[
+      {
+        "school":"University of Alabama in Huntsville",
+        "degree":"M.S in Atmospheric Sciences",
+        "graduated":"December 2017",
+        "description":"While working through my Master's degree, I developed a passion for Python by self-teaching myself the language to build upon the programming skills I gained as an undergraduate. To practice these new skills I completed all my course and thesis work using Python. I was also fortunate to work as a Graduate Teaching Assistant and to serve as the AMS club president which allowed me to develop solid mentorship and leadership skills. I was also apart of multiple field campaigns that gave me the opportunity to collaborate with scientists from various universites and organizations working to accomplish the various research objectives each party had."
+      },
+      {
+        "school":"University of North Dakota",
+        "degree":"B.S. in Atmospheric Sciences; Minor in Mathematics",
+        "graduated":"May 2014",
+        "description":"I stumbled into this major by accident, but I am extremely thankful for the experience it has afforded me. My coursework exposed me to C and while working as a Research Assistant I worked on multiple projects that required me to collaborate with other scientists to perform various analyses using Matlab and IDL. "
+      }
+    ],
+    "work":[
+      {
+        "company":"I.M. Systems Group",
+        "title":"Data Technician III",
+        "years":"December 2017 - Present",
+        "description":"My primary responsibility is to develop operational workflows that process weather satellite data in near-real time utilizing scientific algorithms to generate meteorological products. I work heavily with Python and orchestrate the workflows using Argo to run on Kubernetes clusters, monitoring job statistics stored in InfluxDB and visualized on Grafana dashboards. I've worked my way into a senior position where I mentor more junior employees. Recently, I've been leading the development of multiple utility Python packages that will allow us to get rid of countless lines of duplicate code. Through these projects I've been able to introduce concepts such as unit testing and continuous integration that will be useful as our team tranisitions to a more services oriented architecture."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "description":"I self-taught myself Python in graduate school and is the language I am most familiar with. My current position requires heavy use of Python.",
+        "image": "python.jpg"
+      },
+      {
+        "name":"Git",
+        "description":"I've used Git for all of my personal projects (Github) and professional work (Gitlab). I've also dabbled in some open source projects.",
+        "image": "git.png"
+      },
+      {
+        "name":"Kubernetes",
+        "description":"I've used Kubernetes professionally to run operational workflows in near-real time orchestrating various Python modules, Docker images, and configurations settings using Argo.",
+        "image": "k8s.png"
+      },
+      {
+        "name":"Docker",
+        "description":"Docker has been a useful technology for me when deploying continuous integration pipelines, orchestrating workflows on Kubernetes, and for localized testing in a simulated production environment.",
+        "image": "docker.jpg"
+      },
+      {
+        "name":"InfluxDB/Grafana",
+        "description":"I use the InfluxDB and Grafana stack for measuring processing statistics collected from operational workflows that are run on Kubernetes clusters.",
+        "image": "influxdb_grafana.png"
+      },
+      {
+        "name":"Jenkins",
+        "description":"I've recently adopted and introduced continous integration pipelines to my development team as we transition towards a DevOps centric environment.",
+        "image": "jenkins.png"
+      },
+      {
+        "name":"ReactJs",
+        "description":"I'm only just beginning to learn the ins and outs of React (and Javascript) and decided to build this site as a professional development project to further my skills.",
+        "image": "react.png"
+      },
+      {
+        "name":"PostgreSQL",
+        "description":"I've recently started using PostgreSQL both locally and using AWS' RDS in a personal project as a way to gain more exposure to databases, SQL, and AWS.",
+        "image": "postgresql.jpg"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Canadian Wanderlust",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"canadian-wanderlust.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      },
+      {
+        "title":"Fury Fighting Gear",
+        "category":"(offline now) A fighting gear company I started",
+        "image":"fury-fighting-gear.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Original Thai Food",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"original-thai-food.jpg",
+        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title":"Resume Website",
+        "category":"A React based resume website template",
+        "image":"resume-website.jpg",
+        "url":"http://www.timbakerdev.com"
+      },
+      {
+        "title":"Smirkspace",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"smirkspace.jpg",
+        "url":"http://www.smirkspace.com"
+      }
+    ]
+  },
+  "testimonials":{
+    "testimonials":[
+      {
+        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user":"Kareem Abdul Jabbar"
+      },
+      {
+        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user":"Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}

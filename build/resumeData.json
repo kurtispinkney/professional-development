@@ -1,17 +1,18 @@
 {
   "main": {
     "name":"Kurtis Pinkney",
-    "occupation":"Scientific Software Engineer",
-    "description":"currently employed to develop operational workflows to process weather satellite data generating meteorological products in near-real time.",
+    "occupation":"Python Developer Team Lead",
+    "description":"currently employed to develop operational workflows to process weather satellite data generating meteorological products in near-real time",
     "image":"profilepic.jpg",
-    "bio":"",
+    "bio":"I began my career as an atmospheric scientist and used Python to complete my course work and thesis research. Leveraging the programming skills I developed in college, I stumbled my way into a role as a scientific programmer where I've been exposed to a world of project requirements and processes running in production environments. As a result I've dedicated a lot of time, on and off the clock, learning about development best practices and incorporating those lessons learned into my work.",
+    "bio_personal": "In my free time, I've taken to working on a pet project to refine my programming skills and to play with new tools and technologies. Outside of programming, though, I enjoy playing flag football and backpacking with my fiancee and dog. My fiancee also loves plants and gardening, so I've also been recruited to build various plant shelves and boxes as needed to sustain her grow operation. If you're interested in learning more about me feel free to get in touch with me or download my resume for a deeper dive into my professional skills.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "kurtis.pinkney@gmail.com",
     "phone": "808-202-3727",
     "address":{
       "street":"(Your Street)",
-      "city":"Washington D.C.",
-      "state":"(Your State)",
+      "city":"Denver",
+      "state":"Colorado",
       "zip": "(Your Zip/Postal Code)"
     },
     "website": "http://www.kurtispinkney.com",
@@ -30,7 +31,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Below are some tools and technologies that I've picked up throughout my software engineering journey.",
     "education":[
       {
         "school":"University of Alabama in Huntsville",
@@ -48,9 +49,9 @@
     "work":[
       {
         "company":"I.M. Systems Group",
-        "title":"Data Technician III",
+        "title":"Python Developer Team Lead",
         "years":"December 2017 - Present",
-        "description":"My primary responsibility is to develop operational workflows that process weather satellite data in near-real time utilizing scientific algorithms to generate meteorological products. I work heavily with Python and orchestrate the workflows using Argo to run on Kubernetes clusters, monitoring job statistics stored in InfluxDB and visualized on Grafana dashboards. I've worked my way into a senior position where I mentor more junior employees. Recently, I've been leading the development of multiple utility Python packages that will allow us to get rid of countless lines of duplicate code. Through these projects I've been able to introduce concepts such as unit testing and continuous integration that will be useful as our team tranisitions to a more services oriented architecture."
+        "description":"My primary responsibility is to develop operational workflows that process weather satellite data in near-real time utilizing scientific algorithms to generate meteorological products. I work heavily with Python and orchestrate the workflows using Argo to run on Kubernetes clusters, monitoring job statistics stored in InfluxDB and visualized on Grafana dashboards. I've worked my way into a senior position where I've taken on side projects to increase our teams operational efficiency and spent time mentoring our more junior employees. Recently, I've been leading the development of multiple utility Python packages that will allow us to get rid of countless lines of duplicate code. Through these projects I've been able to introduce concepts such as unit testing and continuous integration that will be useful as our team tranisitions to a more services oriented architecture."
       }
     ],
     "skills":[
